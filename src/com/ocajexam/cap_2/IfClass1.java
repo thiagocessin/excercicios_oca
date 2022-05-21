@@ -12,8 +12,11 @@ public class IfClass1 {
 		
 	
 		
+		StringBuilder sb = new StringBuilder();
 		
-	
+		String s = "";
+		
+		System.out.println(sb.equals(s));
 		
 	}
 	
