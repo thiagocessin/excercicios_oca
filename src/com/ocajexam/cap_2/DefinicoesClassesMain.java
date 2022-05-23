@@ -1,10 +1,11 @@
 package com.ocajexam.cap_2;
 
 import java.text.NumberFormat;
-import java.util.Locale;
+import java.util.ArrayList;
+import java.util.List;
 
-import com.ocajexam.cap_2.enums.Suit;
-import com.ocajexam.tutorial.planets.Earth;
+import com.ocajexam.cap_2.model.Bicycle;
+import com.ocajexam.cap_2.model.TenSpeedBicycle;
 
 public class DefinicoesClassesMain {
 
@@ -13,11 +14,71 @@ public class DefinicoesClassesMain {
 	
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
-		sample();
+		Bicycle b = new Bicycle();
+		b.setDegreeOfTurn(0);
+		b.pedalRPM(50);
+		
+		System.out.println("Wheel rpm "+ b.getWheelRPM());
+		
+		TenSpeedBicycle b2 = new TenSpeedBicycle();
+		b2.setDegreeOfTurn(10);
+		b2.setGearRatio(3f);
+		b2.pedalRPM(40);
+		
+		System.out.println("Wheel rpm "+ b2.getWheelRPM());
+
 				
 		
+	}
+	
+	public static void ticTacToeBoard() {
+		
+		char [] [] ticTacToeBoard = new char[3][3];
+		
+		for(int y = 0; y < 3; y++) {
+			for(int x = 0; x < 3; x++) {
+				ticTacToeBoard[x][y] = '-';
+			}
+			
+		}
+		
+
+		
+		ticTacToeBoard[0][0] = 'X';
+		ticTacToeBoard[1][1] = 'O';
+		ticTacToeBoard[0][2] = 'X';
+		
+		for(int y = 0; y < 3; y++) {
+			for(int x = 0; x < 3; x++) {
+				System.out.println(ticTacToeBoard[x][y] + " ");
+			}
+			System.out.println("\n");
+			
+		}
+		
+		
+		
+	}
+	
+	
+	public static void sample2() {
+	int[] array= {1};
+		
+		System.out.println(i);
+		for(int c : array)		
+			System.out.println(c);
+		
+		List<Integer> lista = new ArrayList<>();
+		lista.size();
+		
+		Integer [] a = new Integer[1];
+		int length = a.length;
+		
+		System.out.println(a.length);//lenth não é um método, nesse caso é um campo público
+	
+		"".length(); // em strings existe o método length
+	
 	}
 	
 	
@@ -38,11 +99,12 @@ public class DefinicoesClassesMain {
 				forCount++;
 				block1Count++;
 				
+				
 			}//fim bloco c
 			
 			
 			{//bloco d
-				
+			
 				int block2Count = 0;
 				totalCount++;
 				forCount++;
