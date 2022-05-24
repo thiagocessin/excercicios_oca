@@ -10,6 +10,8 @@ public class Mp3Player extends MusicPlayer {
 	
 	@Override
 	public void stop() {
+		
+		Bicycle n = new Bicycle();
 		// TODO Auto-generated method stub
 
 	}
@@ -35,6 +37,11 @@ public class Mp3Player extends MusicPlayer {
 	@Override
 	public void jump() {
 		// TODO Auto-generated method stub
+		
+	}
+	
+	public class Truck{
+		
 		
 	}
 	

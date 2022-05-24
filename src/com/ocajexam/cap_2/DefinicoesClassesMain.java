@@ -15,6 +15,24 @@ public class DefinicoesClassesMain {
 	
 	public static void main(String[] args) {
 		
+	
+		// byte, short, char, int, long, float, double, boolean
+		
+		double detailedScore = 1.2;
+		//perda de dados
+		float score = (float)detailedScore;
+		
+		//não há perda de dados
+		detailedScore = score;
+		
+		Float f = 5.7f;
+		
+				
+		
+	}
+	
+	public static void ticTacToeBoard() {
+		
 		Bicycle b = new Bicycle();
 		b.setDegreeOfTurn(0);
 		b.pedalRPM(50);
@@ -27,12 +45,9 @@ public class DefinicoesClassesMain {
 		b2.pedalRPM(40);
 		
 		System.out.println("Wheel rpm "+ b2.getWheelRPM());
-
-				
 		
-	}
-	
-	public static void ticTacToeBoard() {
+		
+		Bicycle b3 = new TenSpeedBicycle();
 		
 		char [] [] ticTacToeBoard = new char[3][3];
 		
