@@ -7,6 +7,12 @@ public interface InterfaceTeste extends InterfaceTeste2, InterfaceTeste3 {
 	
 	default public void runMore() {
 		System.out.println("Running more");
+		
+	
+		
+		
+		
+		
 	}
 
 }

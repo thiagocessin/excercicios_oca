@@ -16,31 +16,42 @@ import java.util.logging.Level;
 // EXERCÍCIO 1-1
 public class TesteClass {
 	
+	
+	static {
+		
+		
+		
+	}
+	
 public static void main(String[] args) throws IOException{
 		
-	Files.createDirectories(Paths.get("logs"));
-	
-	DateTimeFormatter df = DateTimeFormatter.ofPattern("yyyyMMdd_hhmm");
-	
-	LocalDateTime now = LocalDateTime.now();
-	String date = now.format(df);
-	
-	String logFileName = "logs\\testlog-" + date + ".txt";
-	
-	FileHandler myFileHandler = new FileHandler(logFileName);
-	myFileHandler.setFormatter(new SimpleFormatter());
-	
-	Logger ocaLogger = Logger.getLogger("OCAJ Logger");
-	ocaLogger.setLevel(Level.ALL);
-	ocaLogger.addHandler(myFileHandler);
-	ocaLogger.info("\n Mensagem de log");
-	
-	myFileHandler.close();
-	
+//	Files.createDirectories(Paths.get("logs"));
+//	
+//	DateTimeFormatter df = DateTimeFormatter.ofPattern("yyyyMMdd_hhmm");
+//	
+//	LocalDateTime now = LocalDateTime.now();
+//	String date = now.format(df);
+//	
+//	String logFileName = "logs\\testlog-" + date + ".txt";
+//	
+//	FileHandler myFileHandler = new FileHandler(logFileName);
+//	myFileHandler.setFormatter(new SimpleFormatter());
+//	
+//	Logger ocaLogger = Logger.getLogger("OCAJ Logger");
+//	ocaLogger.setLevel(Level.ALL);
+//	ocaLogger.addHandler(myFileHandler);
+//	ocaLogger.info("\n Mensagem de log");
+//	
+//	myFileHandler.close();
+//	
+//	
+//	
 		
 		
 		
 		
 	}
+
+
 
 }
