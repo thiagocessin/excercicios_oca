@@ -8,5 +8,7 @@ public class ClassA {
 	
 	public void g() {}
 	
+	static int x = 10;
+	
 
 }
