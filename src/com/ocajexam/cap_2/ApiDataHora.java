@@ -1,5 +1,6 @@
 package com.ocajexam.cap_2;
 
+import java.nio.file.PathMatcher;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
@@ -20,11 +21,102 @@ import java.util.Map;
 public class ApiDataHora {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-		new ApiDataHora();
+		 public static void main(String[ ] args){       int[] a = { 1, 2, 3, 4 };       int[] b = { 2, 3, 1, 0 };       System.out.println( a [ (a = b)[3] ] );    }
+	}
+	
+	
+	
+	static void testes() {
+		
+		
+		LocalDateTime ldt = LocalDateTime.now();
+		
 		
 	}
+	
+	static void format() {
+		
+		DateTimeFormatter isoDateTime = DateTimeFormatter.ISO_DATE_TIME;
+		
+		LocalDateTime now = LocalDateTime.now();
+		String format = now.format(isoDateTime);
+		
+		System.out.println(format);
+		
+		
+		//***
+		
+		DateTimeFormatter ofLoca = DateTimeFormatter.ofLocalizedDate(FormatStyle.SHORT);
+		System.out.println(now.format(ofLoca));
+		
+		
+		
+	}
+	
+	
+	static void period() {
+		
+		//Period - armazena espaço de tempo, somente DATA
+		
+		Period of = Period.of(1, 5, 3);
+		System.out.println(of);
+		
+		
+		System.out.println(Period.ofWeeks(10));
+		
+		
+		LocalDate ld1 = LocalDate.of(1980, Month.AUGUST, 10);
+		
+		LocalDate ld2 = ld1.plusDays(1).plusMonths(3).minusDays(10).plusYears(18).minusMonths(13);
+		
+		
+		Period between = Period.between(ld1, ld2);
+		System.out.println(between);
+		
+		System.out.println(ld1.until(ld2));
+		
+		
+		System.out.println(ld1.plus(between));
+		
+	}
+	
+	
+	
+	
+	static void training() {
+		
+		LocalDate ldNow = LocalDate.now();
+		System.out.println(ldNow);
+		
+		LocalDate ldOf = LocalDate.of(1980, Month.AUGUST, 10);
+		System.out.println(ldOf);
+		
+		System.out.println(ldNow.plusDays(1).plusMonths(3).minusDays(10));
+		
+		
+		//*****
+		LocalTime ltNow = LocalTime.now();
+		System.out.println(ltNow);
+		System.out.println(LocalTime.of(10, 0,59));
+		
+		LocalDateTime ldtNow = LocalDateTime.now();
+		System.out.println(ldtNow);
+		
+		LocalDateTime ldtOf = LocalDateTime.of(ldNow, ltNow);
+		System.out.println();
+		
+		
+		System.out.println(ldtOf.plusYears(10));
+		
+		
+		
+		
+		
+		
+		
+	}
+	
+	
 	
 	public ApiDataHora() {
 		
